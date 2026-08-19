@@ -1,4 +1,4 @@
 # Full-Stack-Development-Class
 
-This repository was initialized for the Full Stack Development class project.
+This repository hold all of the projects for my Junior year Full Stack Development Class.
 
