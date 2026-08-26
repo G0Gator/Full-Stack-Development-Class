@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sampling & Source Control</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="header-row">
+          <div class="eyebrow">HTML + CSS Practice</div>
+          <div class="ai-badge">AI Version</div>
+        </div>
+        <h1>Sampling & Source Control</h1>
+      </header>
+
+      <main class="intro">
+        <p class="lead">
+          A clean, responsive webpage showing a few different HTML elements and media examples.
+        </p>
+        <p class="subtext">
+          Resize the browser to see the layout adapt smoothly on smaller screens.
+        </p>
+      </main>
+
+      <section class="content-grid" aria-label="Practice content">
+        <article class="card card-link">
+          <div class="card-tag">Entry 1</div>
+          <h2>Link</h2>
+          <p>
+            Visit my GitHub profile and keep exploring new ideas and projects.
+          </p>
+          <a href="https://github.com/G0Gator" target="_blank" rel="noreferrer">Go to GitHub</a>
+        </article>
+
+        <article class="card card-image">
+          <div class="card-tag">Entry 2</div>
+          <h2>Image</h2>
+          <p>Here is a sample image to show how images can be placed on the page.</p>
+          <a href="../Sampling-Source-Control/Keiran.jpg" target="_blank" rel="noreferrer">
+            <img
+              src="../Sampling-Source-Control/Keiran.jpg"
+              alt="Keiran Bray"
+              title="My girlfriend"
+            />
+          </a>
+        </article>
+
+        <article class="card card-video">
+          <div class="card-tag">Entry 3</div>
+          <h2>Video</h2>
+          <p>Embedded media adds motion and interest to a webpage.</p>
+          <video controls preload="metadata">
+            <source src="../Sampling-Source-Control/Running.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </article>
+
+        <article class="card card-location">
+          <div class="card-tag">Entry 4</div>
+          <h2>Geolocation</h2>
+          <p>Click the button to request your exact location.</p>
+          <button id="location-btn" type="button">Get My Location</button>
+          <p id="demo" class="location-output">Waiting for location...</p>
+        </article>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
