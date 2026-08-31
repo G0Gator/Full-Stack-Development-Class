@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IST 411 Survey Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="survey-wrap">
+      <header class="survey-header">
+        <h1>Sports Survey Form</h1>
+        <p>Thank you for taking the time to help us know what sports matter to you.</p>
+      </header>
+
+      <form class="survey-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="role">Which grade group do you fall in?</label>
+          <select id="role" required>
+            <option value="" selected disabled>Select current grade</option>
+            <option>7th-8th grade</option>
+            <option>9th-12th grade</option>
+            <option>College student</option>
+          </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>What sports have you participated in from the list? <span>(check all that apply)</span></label>
+          <div class="option-list">
+            <label class="choice"><input type="checkbox" /> XC</label>
+            <label class="choice"><input type="checkbox" /> Football</label>
+            <label class="choice"><input type="checkbox" /> Track</label>
+            <label class="choice"><input type="checkbox" /> Cheer</label>
+            <label class="choice"><input type="checkbox" /> Basketball</label>
+            <label class="choice"><input type="checkbox" /> Volleyball</label>
+            <label class="choice"><input type="checkbox" /> Soccer</label>
+            <label class="choice"><input type="checkbox" /> Baseball</label>
+            <label class="choice other-choice">
+              <input type="checkbox" />
+              <span>Other</span>
+              <input type="text" class="other-input" placeholder="Please specify" />
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group radio-group">
+          <label>How likely are you to join another school sport next season?</label>
+          <div class="option-list">
+            <label class="choice"><input type="radio" name="sport-interest" checked required /> Very likely</label>
+            <label class="choice"><input type="radio" name="sport-interest" required /> Somewhat likely</label>
+            <label class="choice"><input type="radio" name="sport-interest" required /> Not sure</label>
+            <label class="choice"><input type="radio" name="sport-interest" required /> Unlikely</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="Final_question">What got you into Sports?</label>
+          <textarea id="Final_question" rows="4" placeholder="Enter your story here..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    
+      </form>
+    </div>
+    <script>
+      document.querySelector('.survey-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Your form has been submitted!');
+      });
+    </script>
+  </body>
+</html>

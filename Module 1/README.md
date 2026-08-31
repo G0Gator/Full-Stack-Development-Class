@@ -28,6 +28,9 @@ This folder focuses on a more complete page that includes media examples such as
 ### `Sampling-Source-Control-AI/`
 This version builds on the original sampling page with a cleaner and more polished design, while still keeping the same educational content and purpose.
 
+### `Survey-Form/`
+This folder contains a survey form project that demonstrates how to create a polished form using HTML and CSS. It includes multiple question types, required fields, and a simple submission experience.
+
 ## How to use these projects
 
 1. Open any project folder.

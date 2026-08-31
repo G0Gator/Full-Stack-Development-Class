@@ -21,6 +21,7 @@ This repository was created to practice:
   - `Hello-World-AI/` – AI-themed version of a simple webpage
   - `Sampling-Source-Control/` – media and layout practice using source control concepts
   - `Sampling-Source-Control-AI/` – cleaned-up AI version of the media project
+  - `Survey-Form/` – a styled HTML survey form with required fields and simple interactivity
 
 ## How to view projects
 
