@@ -1,0 +1,652 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-cell {
+    flex: 1;
+    min-width: 200px;
+}
+
+.logo-cell h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.nav-cell {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+    flex-wrap: wrap;
+}
+
+.nav-cell a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-cell a:hover {
+    background-color: #555;
+}
+
+.company-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.company-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.company-text h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.company-text p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.company-image {
+    flex: 1;
+    min-width: 250px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Exceptional CSS Feature #1: transform for interactive effect */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.company-image img:hover {
+    transform: scale(1.05);
+}
+
+.company-image figcaption {
+    font-size: 0.95em;
+    color: #666;
+    font-weight: bold;
+}
+.featured-section {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section h3 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.featured-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.featured-comic-col,
+.catalog-col {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.featured-comic-col:hover,
+.catalog-col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.featured-comic-col h4,
+.catalog-col h4 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.featured-comic-col figure,
+.catalog-col figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-comic-col img,
+.catalog-col img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* Exceptional CSS Feature #1: transform for interactive effect */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.featured-comic-col img:hover,
+.catalog-col img:hover {
+    transform: scale(1.05);
+}
+
+.featured-comic-col figcaption,
+.catalog-col figcaption {
+    font-size: 0.95em;
+    color: #666;
+    font-weight: bold;
+}
+
+.featured-comic-col p,
+.catalog-col p {
+    color: #555;
+    font-size: 0.95em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ============================================
+   SPOTLIGHT SECTION
+   ============================================ */
+.spotlight-section {
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Container for image and comics side-by-side */
+.spotlight-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.spotlight-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    min-width: 250px;
+}
+
+.spotlight-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.spotlight-image figcaption {
+    font-size: 1.6em;
+    color: #666;
+    font-weight: bold;
+}
+
+/* ============================================
+   COMICS ROW - FLEXBOX #2 (Split Row)
+   ============================================ */
+.comics-main-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.comics-images-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.comic-item-large {
+    flex: 1;
+    min-width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+
+.comic-item-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comic-item-large img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.comic-item-large img:hover {
+    transform: scale(1.03);
+}
+
+.comics-text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.comic-description {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 5px solid #ff6b6b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.comic-description:nth-child(2) {
+    border-left-color: #4ecdc4;
+}
+
+.comic-description:nth-child(3) {
+    border-left-color: #ffe66d;
+}
+
+.comic-description:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateX(5px);
+}
+
+.comic-description h4 {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.05em;
+}
+
+.comic-description p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.keyboard-shortcuts-section {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard-shortcuts-section h3 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.shortcuts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shortcut-item {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.shortcut-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.shortcut-item p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+kbd {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.bottom-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 30px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.contact-cell {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+}
+
+.contact-cell h3 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.3em;
+}
+
+.contact-cell p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.contact-cell a {
+    color: #87ceeb;
+    text-decoration: none;
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+
+.contact-cell a:hover {
+    filter: brightness(1.3);
+    text-decoration: underline;
+}
+
+.map-cell {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+}
+
+.map-cell h3 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.3em;
+}
+
+.map-cell iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .logo-cell h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-cell {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .company-area {
+        flex-direction: column;
+        padding: 30px 20px;
+        margin: 20px 15px;
+    }
+
+    .company-image {
+        flex: 1 1 100%;
+    }
+
+    .featured-section,
+    .spotlight-section {
+        padding: 30px 20px;
+        margin: 20px 15px;
+    }
+
+    .comics-main-area {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comics-images-column,
+    .comics-text-column {
+        flex: 1 1 100%;
+    }
+
+    .comic-item-large,
+    .comic-description {
+        flex: 1 1 100%;
+    }
+
+    .keyboard-shortcuts-section {
+        padding: 30px 20px;
+        margin: 20px 15px;
+    }
+
+    .shortcuts-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shortcut-item {
+        flex: 1 1 100%;
+    }
+
+    .bottom-bar {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .contact-cell,
+    .map-cell {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-cell h1 {
+        font-size: 1.2em;
+    }
+
+    .nav-cell {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .nav-cell a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .company-area {
+        flex-direction: column;
+        padding: 20px 15px;
+        margin: 15px 10px;
+    }
+
+    .company-text h2 {
+        font-size: 1.3em;
+    }
+
+    .featured-section,
+    .spotlight-section {
+        padding: 20px 15px;
+        margin: 15px 10px;
+    }
+
+    .featured-section h3,
+    .spotlight-section h3 {
+        font-size: 1.2em;
+    }
+
+    .comics-main-area {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comics-images-column,
+    .comics-text-column {
+        flex: 1 1 100%;
+    }
+
+    .comic-item-large,
+    .comic-description {
+        flex: 1 1 100%;
+        padding: 15px;
+    }
+
+    .keyboard-shortcuts-section {
+        padding: 20px 15px;
+        margin: 15px 10px;
+    }
+
+    .keyboard-shortcuts-section h3 {
+        font-size: 1.2em;
+    }
+
+    .shortcuts-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shortcut-item {
+        flex: 1 1 100%;
+        padding: 15px;
+    }
+
+    .shortcut-item p {
+        font-size: 0.9em;
+    }
+
+    kbd {
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
+
+    .bottom-bar {
+        padding: 20px 10px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .contact-cell h3,
+    .map-cell h3 {
+        font-size: 1.1em;
+    }
+
+    .contact-cell p {
+        font-size: 0.9em;
+    }
+
+    .map-cell iframe {
+        height: 200px;
+    }
+}
