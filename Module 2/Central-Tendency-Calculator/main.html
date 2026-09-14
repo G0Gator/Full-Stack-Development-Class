@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Tendency Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Central Tendency Calculator</h1>
+
+    <form name="calcForm">
+        Low value: <input type="number" id="low-value" name="lowValue" value=""><br><br>
+        High value: <input type="number" id="high-value" name="highValue" value=""><br><br>
+        Number to add: <input type="number" id="number-input" name="newNumber" value=""><br><br>
+        <input type="button" id="add-button" value="Add number" onclick="validateAndAdd()">
+        <input type="button" id="clear-button" value="Clear list" onclick="clearNumbers()">
+    </form>
+
+    <p id="status-message"></p>
+    <p>Mean: <span id="mean-result">0</span></p>
+    <p>Median: <span id="median-result">0</span></p>
+    <p>Mode: <span id="mode-result">None</span></p>
+    <p>Values entered: <span id="numbers-list">None</span></p>
+</body>
+</html>
