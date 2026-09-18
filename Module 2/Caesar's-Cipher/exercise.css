@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Container for flexboxes */
+  .myflexboxRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal entries in myflexbox (25% each) and allow wrapping */
+  .myflexboxColumn {
+    flex: 1 1 25%;
+    padding: 20px;
+  }
+
+  /* Ensure paragraph/div contents wrap instead of forcing horizontal scroll */
+  .myflexboxColumn p,
+  .myflexboxColumn div {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  /* Media query - on screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .myflexboxRow {
+      flex-direction: column;
+    }
+  }
