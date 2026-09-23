@@ -3,7 +3,9 @@ async function getBaconipsum() {
   let apiString = "https://baconipsum.com/api/";
   // next add the parameters to the string using the drop down lists
   let theNewParagraphs = document.getElementById("newParagraphs").value;
-  apiString = apiString + "?type=meat&paras=" + theNewParagraphs;
+  // read type option (set by the buttons); default is 'meat'
+  let typeOption = document.getElementById("typeOption") ? document.getElementById("typeOption").value : "meat";
+  apiString = apiString + "?type=" + encodeURIComponent(typeOption) + "&paras=" + theNewParagraphs;
   // (removed alert for simplicity)
 
   // now make the API call to the web service using the string and store what is returned in response
@@ -49,3 +51,6 @@ function caesarShift(text, shift) {
   }
   return out;
 }
+
+// setType: called by the Meat / Meat & Filler buttons
+// The dropdown (`#typeOption`) holds the selected type; user clicks Get to fetch.

@@ -21,6 +21,22 @@
     overflow-wrap: break-word;
     word-break: break-word;
   }
+
+  /* Type button styles */
+  .typeButton {
+    margin: 0 6px 6px 0;
+    padding: 6px 10px;
+    border: 1px solid #666;
+    background: #f4f4f4;
+    cursor: pointer;
+  }
+
+  .typeButton.active {
+    background: #007acc;
+    color: white;
+    border-color: #005a9e;
+  }
+
   
   /* Media query - on screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
