@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+}
+
+.list-group-item {
+    border-left: 4px solid #007bff;
+    padding: 12px;
+}
+
+.list-group-item:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .col-md-4,
+    .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .form-label,
+    .form-check-label {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+    }
+}
+
