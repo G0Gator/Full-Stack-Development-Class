@@ -1,0 +1,19 @@
+{
+  "name": "course_backend",
+  "version": "1.0.0",
+  "description": "Basic course backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "course",
+    "api"
+  ],
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

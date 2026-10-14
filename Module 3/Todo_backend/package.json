@@ -1,0 +1,19 @@
+{
+  "name": "todo_backend",
+  "version": "1.0.0",
+  "description": "Simple To-do backend service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "todo",
+    "api"
+  ],
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
