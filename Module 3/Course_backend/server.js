@@ -67,6 +67,6 @@ app.delete('/api/courses/:id', (req, res) => {
   res.send(course);
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3020;
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));

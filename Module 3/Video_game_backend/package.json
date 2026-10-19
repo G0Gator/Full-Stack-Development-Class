@@ -1,0 +1,13 @@
+{
+  "name": "video_game_backend",
+  "version": "1.0.0",
+  "description": "Simple video game CRUD backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

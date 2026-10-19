@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Game List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Video Game List</h1>
+
+    <form id="game-form">
+      <input type="text" id="title" placeholder="Game title" required>
+      <input type="text" id="genre" placeholder="Genre" required>
+      <input type="number" id="rating" placeholder="Rating" min="1" max="10" required>
+      <label for="completed">Completed:</label>
+      <input type="checkbox" id="completed">
+      <button type="submit">Add Game</button>
+    </form>
+
+    <ul id="game-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
